@@ -1,0 +1,300 @@
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+
+*{
+  font-family: 'Lato', sans-serif;
+  box-sizing:border-box;
+line-height: 1.3em;
+}
+
+#header{
+  position:fixed;
+  top:0;
+  padding:0 20px;
+  display:flex;
+ 
+ background-color:#eeeeee;
+  height:8vh;
+  margin:0;
+ align-items:center;
+  width:100%;
+ justify-content:space-between;
+}
+
+  @media(max-width:414px){
+      #header{ 
+        display:block;
+        width:100%;
+        position:static;
+    }
+    .nav-link{
+      display:block;
+      width:100%;
+      min-width:100%;
+      margin:0 auto;
+      
+    }
+    #logo{
+      width:100%;
+      display:block;
+     
+    }
+    #header-img{
+  height:100%;
+   padding-left:0;
+  margin-left:0;
+   text-align:center;   
+  }
+    
+    }
+#nav-1{
+  margin-left:auto;
+}
+.nav-link{
+  text-align:center;
+  flex-basis:12vw;
+  min-width:100px;
+  }
+
+#header-img{
+  height:105%;
+  margin-left:5vh;
+    margin-top:5px;
+  
+  }
+
+a{
+  height:100%;
+  text-decoration:none;
+  color:black;
+}
+#logo{
+  margin:0;
+  
+  height:100%;
+  
+}
+body{
+  margin:0;
+  background-color:#eeeeee;
+}
+#get-started{
+display:flex;
+  flex-direction:column;
+  justify-content:center;
+  width:100%;
+ align-items:center;
+  margin-top:70px;
+  word-wrap: break-word;
+  margin-bottom:70px;
+}
+form{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  margin-top:0px;
+}
+input{
+  width:24vw;
+  height:5vh;
+}
+input[type="submit"]{
+  width:8vw;
+  height:4vh;
+  background-color:#f1c40f;
+  border:0 solid #000;
+  border-radius:2px;
+  transition: background-color .3s;
+  margin:8px;
+  font-weight:600;
+  font-size:16px;
+  padding:5px;
+  text-transform:uppercase;
+}
+input:focus{
+  box-shadow:0 0 9px 2px #aaa;
+}
+input{
+  transition: box-shadow .7s;
+}
+input[type="submit"]:hover{
+  background-color:orange;
+  cursor:pointer;
+}
+h3{
+  margin-top:0px;
+}
+.row{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  height:100%;
+  width:100%;
+  
+}
+.item1> img{
+  width:60px;
+  
+}
+#features{
+  display:flex;
+   width:65vw;
+  margin:0 auto;
+   justify-content:space-around;
+  flex-direction:column;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+#features h2{
+  margin:1px;
+}
+.item2{
+  flex-basis:80%;
+}
+#video{
+  width:560px;
+  margin:50px auto;
+}
+#pricing{
+  display:flex;
+  width:65vw;
+  margin-bottom:50px;
+  margin: 0 auto;
+}
+.p{
+  display:flex;
+  flex-direction:column;
+  flex:1 1 33.33%;
+  padding:;
+  border: 1px solid black;
+  border-radius:3px;
+  margin:8px;
+  justify-content:space-betwee;
+  align-items:center;
+  text-align:center;
+}
+.p img{
+  width:100%;
+  margin: 0px;
+  margin-bottom:0px;
+}
+.p >.p-name{
+  background-color:#dddddd;
+  width:100%;
+  
+  font-weight:600;
+  text-transform:uppercase;
+  margin:0;
+}
+.p-descrip p{
+  margin:1px auto;
+  font-size:17px;
+  
+}
+.p-descrip h2{
+  margin-top:3px;
+  margin-bottom:1px;
+}
+button{
+  width:8vw;
+  height:6vh;
+ background-color:#f1c40f;
+  border:0 solid #000;
+  border-radius:2px;
+  font-size:15px;
+  margin:10px;
+  text-transform:uppercase;
+   cursor: pointer;
+  font-weight:500;
+  transition: background-color .7s;
+}
+button:hover{
+  background-color:orange;
+}
+footer{
+  width:80vw;
+  height:16vh;
+  background-color:#dddddd;
+  margin:0 auto;
+  text-align:right;
+  padding:20px;
+  margin-top:40px;
+  
+}
+
+footer a{
+  margin-left:5px;
+  margin-right:5px;
+}
+a:hover{
+  color:orange;
+}
+@media(max-width:1024px){
+  footer p{
+    line-height:.5em;
+  }
+  #pricing{
+    width:70vw;
+  }
+  input{
+  width:27vw;
+    height:4vh;}
+  input[type="submit"]{
+   font-size:.8em;
+    padding:0;
+    width:12vw;
+    height:4vh;
+  }
+  button{
+  width:8vw;
+  height:5vh;
+  }
+  @media(max-height:600px){
+    input{
+  width:27vw;
+    height:5vh;}
+     input[type="submit"]{
+   font-size:.8em;
+    padding:0;
+    width:12vw;
+    height:5vh;
+  }
+    @media(max-width:960px){
+       input{
+  width:29vw;
+    height:5vh;}
+     #pricing{
+    width:75vw;
+    }
+      .p{
+        margin:6px;
+      }
+    }
+    @media(max-width:800px){
+      footer p{
+    line-height:0em;
+    }
+    footer{
+  width:80vw;
+      height:18vh;}
+      #pricing{
+        width:85vw;
+      }
+      input{
+  width:34vw;
+    height:6vh;}
+        input[type="submit"]{
+   font-size:.8em;
+    padding:0;
+    width:13vw;
+          height:6vh;}
+        button{
+  width:9vw;
+  height:6vh;
+  }
+      .p{
+        margin:4px;
+      }
+    }
+   
